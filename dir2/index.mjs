@@ -18,7 +18,7 @@ import { fileURLToPath } from 'url';  // 현재 모듈에 파일과 디렉토리
 import cors from 'cors'; // <- 추가 1
 
 const app = express();
-app.use(cors); // <- 추가 2
+app.use(cors()); // <- 추가 2
 
 // set() : express 모듈에 존재하는 함수
 app.set('port', process.env.PORT || 3000)  // -> 환경변수 PORT가 존재하면 그 값을 사용하고, 아니면 3000번 포트를 사용한다.

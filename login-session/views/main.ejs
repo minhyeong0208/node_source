@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>메인 페이지</h3>
+    <p>로그인 성공!  세션 ID : <%= sessionID %></p> <!-- EJS -->
+    <form action="/logout" method="get">
+        <button type="submit">로그아웃</button>
+    </form>
+</body>
+</html>
