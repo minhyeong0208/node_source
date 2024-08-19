@@ -77,6 +77,14 @@ app.get('/test', (req, res) => {
     res.sendFile(path.join(__dirname, 'test.html'));  // 현재 폴더의 abc.html 호출 
 });
 
+app.get('/api/users', (req, res)=> {
+    res.json([
+        { id: 1, name: '김밥' },
+        { id: 2, name: '공기밥' },
+        { id: 3, name: '주먹밥' }
+    ]);
+});
+
 // console.log('서버 서비스 시작...');
 // app.listen(3000);
 app.listen(app.get('port'), () => {  // express 모듈의 멤버 필드 port(18행에서 port 값을 설정.)
